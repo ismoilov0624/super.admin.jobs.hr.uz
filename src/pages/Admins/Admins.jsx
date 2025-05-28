@@ -5,7 +5,7 @@ import { Plus, Edit, Trash2, User, Building2, Shield } from "lucide-react";
 import { useAdmins, useDeleteAdmin } from "./hooks/useAdmins";
 import CreateAdminModal from "./components/CreateAdminModal";
 import DeleteAdminModal from "./components/DeleteAdminModal";
-import AdminFilters from "./components/Adminfilters";
+import AdminFilters from "./components/AdminFilters";
 import Pagination from "../../components/Pagination/Pagination";
 import { useOrganizations } from "../Organizations/hooks/useOrganizations";
 import "./Admins.scss";
