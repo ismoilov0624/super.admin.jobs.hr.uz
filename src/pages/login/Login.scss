@@ -4,6 +4,22 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+    align-items: flex-start;
+    padding-top: 10vh;
+  }
+
+  @media (max-width: 480px) {
+    padding: 10px;
+    padding-top: 5vh;
+  }
+
+  @media (max-width: 360px) {
+    padding: 5px;
+    padding-top: 2vh;
+  }
 }
 
 .login-card {
@@ -14,6 +30,23 @@
   width: 100%;
   max-width: 400px;
   animation: slideUp 0.5s ease-out;
+
+  @media (max-width: 768px) {
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  @media (max-width: 480px) {
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 360px) {
+    padding: 20px 15px;
+    border-radius: 6px;
+  }
 }
 
 @keyframes slideUp {
@@ -31,17 +64,48 @@
   text-align: center;
   margin-bottom: 30px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: 480px) {
+    margin-bottom: 20px;
+  }
+
   .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 12px;
+    }
+
     .logo-image {
       width: 150px;
       height: auto;
       max-height: 80px;
       object-fit: contain;
+
+      @media (max-width: 768px) {
+        width: 120px;
+        max-height: 60px;
+      }
+
+      @media (max-width: 480px) {
+        width: 100px;
+        max-height: 50px;
+      }
+
+      @media (max-width: 360px) {
+        width: 80px;
+        max-height: 40px;
+      }
     }
   }
 
@@ -50,12 +114,33 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 8px;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 360px) {
+      font-size: 18px;
+    }
   }
 
   p {
     color: #718096;
     font-size: 14px;
     margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -63,12 +148,30 @@
   .form-group {
     margin-bottom: 20px;
 
+    @media (max-width: 768px) {
+      margin-bottom: 18px;
+    }
+
+    @media (max-width: 480px) {
+      margin-bottom: 16px;
+    }
+
     label {
       display: block;
       color: #2d3748;
       font-weight: 500;
       margin-bottom: 8px;
       font-size: 14px;
+
+      @media (max-width: 768px) {
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
     }
 
     .input-wrapper {
@@ -81,6 +184,18 @@
         left: 12px;
         color: #718096;
         z-index: 1;
+
+        @media (max-width: 768px) {
+          left: 10px;
+          width: 16px;
+          height: 16px;
+        }
+
+        @media (max-width: 480px) {
+          left: 8px;
+          width: 14px;
+          height: 14px;
+        }
       }
 
       input {
@@ -91,6 +206,23 @@
         font-size: 14px;
         transition: all 0.2s ease;
         box-sizing: border-box;
+
+        @media (max-width: 768px) {
+          padding: 11px 14px 11px 36px;
+          font-size: 13px;
+          border-radius: 6px;
+        }
+
+        @media (max-width: 480px) {
+          padding: 10px 12px 10px 32px;
+          font-size: 12px;
+          border-radius: 5px;
+        }
+
+        @media (max-width: 360px) {
+          padding: 9px 10px 9px 28px;
+          font-size: 11px;
+        }
 
         &:focus {
           outline: none;
@@ -116,8 +248,30 @@
         justify-content: center;
         padding: 4px;
 
+        @media (max-width: 768px) {
+          right: 10px;
+          padding: 3px;
+        }
+
+        @media (max-width: 480px) {
+          right: 8px;
+          padding: 2px;
+        }
+
         &:hover {
           color: #2d3748;
+        }
+
+        svg {
+          @media (max-width: 768px) {
+            width: 16px;
+            height: 16px;
+          }
+
+          @media (max-width: 480px) {
+            width: 14px;
+            height: 14px;
+          }
         }
       }
     }
@@ -135,9 +289,31 @@
     cursor: pointer;
     transition: all 0.2s ease;
 
+    @media (max-width: 768px) {
+      padding: 13px;
+      font-size: 15px;
+      border-radius: 6px;
+    }
+
+    @media (max-width: 480px) {
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    @media (max-width: 360px) {
+      padding: 11px;
+      font-size: 13px;
+    }
+
     &:hover:not(:disabled) {
       transform: translateY(-1px);
       box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+
+      @media (max-width: 480px) {
+        transform: none;
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+      }
     }
 
     &:disabled {
@@ -148,24 +324,102 @@
   }
 }
 
-@media (max-width: 480px) {
+// Landscape orientation adjustments
+@media (max-height: 600px) and (orientation: landscape) {
+  .login-container {
+    padding-top: 2vh;
+    align-items: center;
+  }
+
   .login-card {
-    padding: 30px 20px;
-    margin: 10px;
+    padding: 20px;
   }
 
   .login-header {
+    margin-bottom: 15px;
+
     .logo-container {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
 
       .logo-image {
-        width: 120px;
-        max-height: 60px;
+        width: 80px;
+        max-height: 40px;
       }
     }
 
     h1 {
-      font-size: 20px;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .login-form {
+    .form-group {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+// Very small screens
+@media (max-width: 320px) {
+  .login-container {
+    padding: 5px;
+    padding-top: 1vh;
+  }
+
+  .login-card {
+    padding: 15px 10px;
+  }
+
+  .login-header {
+    .logo-container {
+      .logo-image {
+        width: 70px;
+        max-height: 35px;
+      }
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+
+  .login-form {
+    .form-group {
+      .input-wrapper {
+        input {
+          padding: 8px 8px 8px 24px;
+          font-size: 10px;
+        }
+
+        .input-icon {
+          left: 6px;
+          width: 12px;
+          height: 12px;
+        }
+
+        .password-toggle {
+          right: 6px;
+
+          svg {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+
+    .login-button {
+      padding: 10px;
+      font-size: 12px;
     }
   }
 }
